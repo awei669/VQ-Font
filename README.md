@@ -96,19 +96,27 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 ## Test
 ### Run scripts
 * ```
-
+  python3 inference.py ./cfgs/custom.yaml \
+  --weight \path\to\saved_model.pdparams \
+  --content_font \path\to\content_imgs \
+  --img_path \path\to\test_imgs \
+  --saving_root ./infer_res
   ```
 
 
 
-
-
 ## Citation
-
+@inproceedings{pan_2023_few,
+  title={Few shot font generation via transferring similarity guided global style and quantization local style},
+  author={Pan, Wei and Zhu, Anna and Zhou, Xinyu and Iwana, Brian Kenji and Li, Shilin},
+  booktitle={International Conference on Computer Vision (ICCV)},
+  year={2023},
+}
 
 
 
 ## Acknowledgements
+Our code is modified based on the LFFont.
 
 
 
