@@ -69,7 +69,9 @@ Automatic few-shot font generation (AFFG), aiming at generating new fonts with o
 ## Training
 The training process is divided into two stages: 1）Pre-training the content encoder and codebook via [VQ-VAE](https://arxiv.org/abs/1711.00937), 2）Training the few shot font generation model via [GAN](https://dl.acm.org/doi/abs/10.1145/3422622). 
 ### Pre-train VQ-VAE
-The training process can be found in ```./model/VQ-VAE.ipynb```, Then use the pre-trained content encoder to calculate a similarity between all training and test characters and store it as a dictionary.
+When pre-training VQ-VAE, the reconstructed character object comes from train_unis in the content font. The training process can be found at ```./model/VQ-VAE.ipynb```. 
+
+Then use the pre-trained content encoder to calculate a similarity between all training and test characters and store it as a dictionary.
 > {'4E07': {'4E01': 0.2143, '4E03': 0.2374, ...}, '4E08': {'4E01': 0.1137, '4E03': 0.1020, ...}, ...}
 
 
@@ -87,10 +89,8 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 #### Run scripts
 * ```
-  python3 train.py 
-    task_name
-    cfgs/custom.yaml
-    --resume \path\to\your\pretrain_model.pdparams
+  python3 train.py task_name cfgs/custom.yaml
+    #--resume \path\to\your\pretrain_model.pdparams
   ```
 
 ## Test

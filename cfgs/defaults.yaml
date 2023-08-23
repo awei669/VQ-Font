@@ -1,0 +1,62 @@
+overwrite: False
+work_dir: ./result
+batch_size: 20
+comb_iter: 800000
+seed: 2
+g_lr: 2e-4
+d_lr: 6e-4
+n_workers: 1
+adam_betas: [0.0, 0.9]
+init: xavier
+num_channels: 256
+
+content_font: ""
+language: "chn"
+
+data_path: /path/to/lmdb
+data_meta: meta/train.json
+
+dset_aug:
+  normalize: True
+
+cv_n_unis: 30
+cv_n_fonts: 10
+
+# model
+C: 32
+input_size: 128
+g_args:
+  comp_enc:
+    C_out: 256
+    norm: "in"
+    activ: relu
+  dec:
+    norm: "in"
+    activ: relu
+    out: sigmoid
+  content_enc:
+    C_out: 256
+    content_sigmoid: False
+  integrator_args:
+    norm: "in"
+    activ: relu
+
+d_args:
+  w_norm: spectral
+  activ: relu
+  gap_activ: relu
+  res_scale_var: False
+
+
+# losses
+pixel_loss_type: L1
+pixel_w: 1.0
+gan_w: 1.0
+contrastive_w: 0.1
+
+# etc
+save: all-last
+print_freq: 1000
+val_freq: 10000
+save_freq: 50000
+tb_freq: 10
