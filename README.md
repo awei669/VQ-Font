@@ -1,15 +1,7 @@
 # Few shot font generation via transferring similarity guided global and quantization local styles（ICCV2023）
 
-Official Pytorch Implementation of **Few shot font generation via transferring similarity guided global and quantization local styles.**
+Official Pytorch Implementation of **"Few shot font generation via transferring similarity guided global and quantization local styles"** by  Wei Pan, Anna Zhu, Xinyu Zhou,  Brian Kenji Iwana, and Shilin Li. 
 
- Wei Pan<sup>1</sup>, Anna Zhu<sup>1*</sup>, Xinyu Zhou<sup>1</sup>, Brian Kenji Iwana<sup>2</sup>, Shilin Li<sup>1</sup><br>
-
-<sup>1</sup> <sub>School of Computer and Artificial Intelligence, Wuhan University of Technology. Wuhan China. </sub>  
-<sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
-
-## Abstract
-
-Automatic few-shot font generation (AFFG), aiming at generating new fonts with only a few glyph references, reduces the labor cost of manually designing fonts. However, the traditional AFFG paradigm of style-content disentanglement cannot capture the diverse local details of different fonts. So, many component-based approaches are proposed to tackle this problem. The issue with component-based approaches is that they usually require special pre-defined glyph components, e.g., strokes and radicals, which is infeasible for AFFG of different languages. In this paper, we present a novel font generation approach by aggregating styles from character similarity guided global features and stylized component-level representations. We calculate the similarity scores of the target character and the referenced samples by measuring the distance along the corresponding channels from the content features, and assign them as the weights for aggregating the global style features. To better capture the local styles, a cross-attention-based style transfer module is adopted to transfer the styles of reference glyphs to the components, where the components are self-learned discrete latent codes through vector quantization without manual definition. With these design, our AFFG method could obtain a complete set of component-level style representations, and also control the global glyph characteristics. The experimental results reflect the effectiveness and generalization of the proposed method on different linguistic scripts, and also show its superiority when compared with other state-of-the-art methods.
 
 # Usage
 ## Dependencies
@@ -18,6 +10,7 @@ Automatic few-shot font generation (AFFG), aiming at generating new fonts with o
 >torchvision >= 0.13.0  
 >sconf >= 0.2.5  
 >lmdb >= 1.2.1
+
 
 ## Data Preparation
 ### Images and Characters
@@ -28,7 +21,7 @@ Automatic few-shot font generation (AFFG), aiming at generating new fonts with o
 * >{乙、十、丁、厂、七、卜、人、入、儿、匕、几、九、力、刀、乃、又、干、三、七、干、...、etc}
 
 3)  After that, draw all font images via ```./datasets/font2image.py```.
-* Organize directories structure as below
+* Organize directories structure as below: 
   > Font Directory  
   > |--| content  
   > |&#8195; --| content_font  
@@ -118,7 +111,7 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 
 ## Acknowledgements
-Our code is modified based on the [LFFont](https://github.com/clovaai/lffont)
+Our code is modified based on the [LFFont](https://github.com/clovaai/lffont).
 
 
 
