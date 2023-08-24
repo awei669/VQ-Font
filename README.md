@@ -106,18 +106,19 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 
 ## Citation
-@inproceedings{pan_2023_few,
+```
+@inproceedings{pan2023few,
   title={Few shot font generation via transferring similarity guided global style and quantization local style},
   author={Pan, Wei and Zhu, Anna and Zhou, Xinyu and Iwana, Brian Kenji and Li, Shilin},
-  booktitle={International Conference on Computer Vision (ICCV)},
-  year={2023},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  year={2023}
 }
+```
 
 
 
 ## Acknowledgements
-Our code is modified based on the LFFont.
-
+Our code is modified based on the [LFFont](https://github.com/clovaai/lffont)
 
 
 
