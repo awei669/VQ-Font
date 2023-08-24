@@ -1,9 +1,3 @@
-"""
-MX-Font
-Copyright (c) 2021-present NAVER Corp.
-MIT license
-"""
-
 from fontTools.ttLib import TTFont
 from PIL import Image, ImageFont, ImageDraw
 import numpy as np
