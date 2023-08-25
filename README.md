@@ -1,6 +1,6 @@
 # Few shot font generation via transferring similarity guided global and quantization local styles（ICCV2023）
 
-Official Pytorch Implementation of **"Few shot font generation via transferring similarity guided global and quantization local styles"** by Wei Pan<sup>1</sup>, Anna Zhu<sup>1</sup>, Xinyu Zhou<sup>1</sup>, Brian Kenji Iwana<sup>2</sup>, and Shilin Li<sup>1</sup>. 
+Official Pytorch Implementation of **"Few shot font generation via transferring similarity guided global and quantization local styles"** by Wei Pan<sup>1</sup>, Anna Zhu<sup>1</sup>*, Xinyu Zhou<sup>1</sup>, Brian Kenji Iwana<sup>2</sup>, and Shilin Li<sup>1</sup>. 
 
 <sup>1</sup> <sub>School of Computer Science and Artificial Intelligence, Wuhan University of Technology, Wuhan China. </sub>  
 <sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
