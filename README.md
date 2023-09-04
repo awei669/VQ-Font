@@ -4,7 +4,8 @@ Official Pytorch Implementation of **"Few shot font generation via transferring 
 
 <sup>1</sup> <sub>School of Computer Science and Artificial Intelligence, Wuhan University of Technology. </sub>  <sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
 
-Our method is based on [Vector Quantised-Variational AutoEncoder(VQ-VAE)](https://arxiv.org/abs/1711.00937). So, our method is called VQ-Font。 
+Our method is based on [Vector Quantised-Variational AutoEncoder(VQ-VAE)](https://arxiv.org/abs/1711.00937). So we named our FFG method VQ-Font.
+
 
 ## Abstract
 
