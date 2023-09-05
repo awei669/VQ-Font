@@ -4,7 +4,7 @@ Official Pytorch Implementation of **"Few shot font generation via transferring 
 
 <sup>1</sup> <sub>School of Computer Science and Artificial Intelligence, Wuhan University of Technology. </sub>  <sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
 
-Our inspiration comes from [Vector Quantization](https://arxiv.org/abs/1711.00937), so our FFG(Few shot font generation) method is called **VQ-Font**. 
+Our self-learning strategy is based on the [VQ-VAE](https://arxiv.org/abs/1711.00937) framework, so our FFG method is called **VQ-Font**.  
 
 Paper can be found at ```./Paper_IMG/``` | [Arxiv](). 
 
