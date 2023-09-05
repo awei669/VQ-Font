@@ -1,10 +1,10 @@
 # Few shot font generation via transferring similarity guided global and quantization local styles（ICCV2023）
 
-Official Pytorch Implementation of **"Few shot font generation via transferring similarity guided global and quantization local styles"** by [Wei Pan](https://scholar.google.com/citations?user=D52J2HkAAAAJ&hl=zh-CN)<sup>1</sup>, [Anna Zhu](https://scholar.google.com/citations?hl=zh-CN&user=H5pImFUAAAAJ)<sup>1</sup>*, [Xinyu Zhou](https://scholar.google.com/citations?hl=zh-CN&user=jcZAXYAAAAAJ)<sup>1</sup>, [Brian Kenji Iwana](https://scholar.google.com/citations?hl=zh-CN&user=azIV5VkAAAAJ)<sup>2</sup>, Shilin Li<sup>1</sup>. 
+Official Pytorch Implementation of **"Few shot font generation via transferring similarity guided global and quantization local styles"** by Wei Pan, Anna Zhu<sup>1</sup>*, Xinyu Zhou<sup>1</sup>, Brian Kenji Iwana<sup>2</sup>, and Shilin Li<sup>1</sup>. 
 
 <sup>1</sup> <sub>School of Computer Science and Artificial Intelligence, Wuhan University of Technology. </sub>  <sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
 
-Our inspiration comes from [vector-quantization](https://arxiv.org/abs/1711.00937), so our FFG(Few shot font generation) method is called **VQ-Font**. 
+Our inspiration comes from [Vector Quantization](https://arxiv.org/abs/1711.00937), so our FFG(Few shot font generation) method is called **VQ-Font**. 
 
 Paper can be found at ```./Paper_IMG/``` | [Arxiv](). 
 
