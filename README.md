@@ -6,7 +6,7 @@ Official Pytorch Implementation of **"Few shot font generation via transferring 
 
 Our self-learning strategy is based on the [VQ-VAE](https://arxiv.org/abs/1711.00937) framework, so our FFG method is called **VQ-Font**.  
 
-Paper can be found at ```./Paper_IMG/``` | [Arxiv](). 
+Paper can be found at ```./Paper_IMG/``` | [Arxiv](https://arxiv.org/abs/2309.00827). 
 
 
 ## Abstract
