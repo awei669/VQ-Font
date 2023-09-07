@@ -4,7 +4,7 @@ Official Pytorch Implementation of **"Few shot font generation via transferring 
 
 <sup>1</sup> <sub>School of Computer Science and Artificial Intelligence, Wuhan University of Technology. </sub>  <sup>2</sup> <sub>Human Interface Laboratory, Kyushu University.</sub>
 
-Our self-learning strategy is based on the [VQ-VAE](https://arxiv.org/abs/1711.00937) framework, so our FFG method is called **VQ-Font**.  
+Our method is based on [Vector Quantization](https://arxiv.org/abs/1711.00937), so we named our FFG method **VQ-Font**.
 
 Paper can be found at ```./Paper_IMG/``` | [Arxiv](https://arxiv.org/abs/2309.00827). 
 
@@ -113,6 +113,7 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 
 ## Citation
+Welcome to cite our paper if you find it can help you.
 ```
 @inproceedings{pan2023few,
   title={Few shot font generation via transferring similarity guided global style and quantization local style},
@@ -125,13 +126,13 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 
 ## Acknowledgements
-Our code is modified based on the [LFFont](https://github.com/clovaai/lffont).
+Our code is modified based on the [LF-Font](https://github.com/clovaai/lffont) and [VQ-VAE](https://github.com/zalandoresearch/pytorch-vq-vae).
 
 
 
 
 ## Contact
-If you have any question, please feel free to contact with ```aaawei@whut.edu.cn```
+If you have any question, please feel free to contact with ```aaawei@whut.edu.cn```.  
 
 
 
