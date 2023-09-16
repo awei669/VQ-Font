@@ -9,4 +9,3 @@ def generator_dispatch():
 
 from .content_encoder import content_enc_builder
 from .decoder import dec_builder
-from .VQ_VAE import Model
