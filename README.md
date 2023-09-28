@@ -6,7 +6,7 @@ Official Pytorch Implementation of **"Few shot font generation via transferring 
 
 Our method is based on [Vector Quantization](https://arxiv.org/abs/1711.00937), so we named our FFG method **VQ-Font**.
 
-Paper can be found at ```./Paper_IMG/``` | [Arxiv](https://arxiv.org/abs/2309.00827). 
+Paper can be found at ```./Paper_IMG/``` | [Arxiv](https://arxiv.org/abs/2309.00827)｜[CVF](https://openaccess.thecvf.com/content/ICCV2023/papers/Pan_Few_Shot_Font_Generation_Via_Transferring_Similarity_Guided_Global_Style_ICCV_2023_paper.pdf). 
 
 
 ## Abstract
