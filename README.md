@@ -115,11 +115,13 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 ## Citation
 Welcome to cite our paper if you find it can help you.
 ```
-@inproceedings{pan2023few,
-  title={Few shot font generation via transferring similarity guided global style and quantization local style},
-  author={Pan, Wei and Zhu, Anna and Zhou, Xinyu and Iwana, Brian Kenji and Li, Shilin},
-  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
-  year={2023}
+@InProceedings{Pan_2023_ICCV,
+    author    = {Pan, Wei and Zhu, Anna and Zhou, Xinyu and Iwana, Brian Kenji and Li, Shilin},
+    title     = {Few Shot Font Generation Via Transferring Similarity Guided Global Style and Quantization Local Style},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {19506-19516}
 }
 ```
 
@@ -132,7 +134,7 @@ Our code is modified based on the [LF-Font](https://github.com/clovaai/lffont) a
 
 
 ## Contact
-If you have any question, please feel free to contact with ```aaawei@whut.edu.cn```.  
+If you have any question, please feel free to contact with ```aaawei@whut.edu.cn``` or ```annazhu@whut.edu.cn```
 
 
 
