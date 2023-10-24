@@ -32,41 +32,47 @@ The architecture of our model. The generator consists of five parts: a pre-train
 
 2)  Secondly, specify the characters to be generated (including training characters and test characters), eg the first-level Chinese character table contains 3500 Chinese characters. 
 
-* >{乙、十、丁、厂、七、卜、人、入、儿、匕、几、九、力、刀、乃、又、干、三、七、干、...、etc}
+* >trian_val_3500: {乙、十、丁、厂、七、卜、人、入、儿、匕、几、九、力、刀、乃、又、干、三、七、干、...、etc}  
+  >train_3000: {天、成、在、麻、...、etc}  
+  >val_500: {熊、湖、战、...、etc}  
+
+3) Convert the characters in the second step into unicode encoding and save them in json format, you can convert the utf8 format to unicode by using ```hex(ord(ch))[2:].upper():```, examples can be found in ```./meta/```.
+* > trian_val_all_characters: ["4E00", "4E01", "9576", "501F", ...]  
+  > train_unis: ["4E00", "4E01", ...]  
+  > val_unis: ["9576", "501F", ...]  
 
 3)  After that, draw all font images via ```./datasets/font2image.py```.
 * Organize directories structure as below: 
   > Font Directory  
-  > |--| content  
-  > |&#8195; --| content_font  
-  > |&#8195; &#8195; --| content_font_char1.png  
-  > |&#8195; &#8195; --| content_font_char2.png  
+  > |--| content_font  
+  > |&#8195; --| train  
+  > |&#8195; &#8195; --| train_3000.png  
+  > |&#8195; &#8195; --| ...  
+  > |&#8195; --| val  
+  > |&#8195; &#8195; --| val_500.png  
+  > |&#8195; &#8195; --| ...  
+  > |&#8195; --| train_val  
+  > |&#8195; &#8195; --| trian_val_3500.png  
   > |&#8195; &#8195; --| ...  
   > |--| train  
   > |&#8195; --| train_font1  
   > |&#8195; --| train_font2  
-  > |&#8195; &#8195; --| train_font2_char1.png  
-  > |&#8195; &#8195; --| train_font2_char2.png  
+  > |&#8195; &#8195; --| trian_val_3500.png   
   > |&#8195; &#8195; --| ...  
   > |&#8195; --| ...  
   > |--| val  
   > |&#8195; --| val_font1  
   > |&#8195; --| val_font2  
-  > |&#8195; &#8195; --| val_font2_char1.png  
-  > |&#8195; &#8195; --| val_font2_char2.png  
+  > |&#8195; &#8195; --| trian_val_3500.png    
   > |&#8195; &#8195; --| ...  
   > |&#8195; --| ...  
 
 ### Build meta files and lmdb environment
-1. Split all characters into train characters and val characters with unicode format and save them into json files, you can convert the utf8 format to unicode by using ```hex(ord(ch))[2:].upper():```, examples can be found in ```./meta/```. 
-* > train_unis: ["4E00", "4E01", ...]  
-  > val_unis: ["9576", "501F", ...]
-
-2. Run script ```./build_trainset.sh```
+Run script ```./build_trainset.sh```
 * ```
   python3 ./build_dataset/build_meta4train.py \
   --saving_dir ./results/your_task_name/ \
-  --content_font path\to\content \
+  --content_font path\to\all_content \
   --train_font_dir path\to\training_font \
   --val_font_dir path\to\validation_font \
   --seen_unis_file path\to\train_unis.json \
