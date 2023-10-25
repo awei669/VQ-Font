@@ -32,7 +32,7 @@ The architecture of our model. The generator consists of five parts: a pre-train
 
 2)  Secondly, specify the characters to be generated (including training characters and test characters), eg the first-level Chinese character table contains 3500 Chinese characters. 
 
-  >trian_val_3500: {乙、十、丁、厂、七、卜、人、入、儿、匕、几、九、力、刀、乃、又、干、三、七、干、...、etc}  
+  >trian_val_3500: {乙、十、丁、厂、七、卜、人、入、儿、匕、...、etc}  
   >train_3000: {天、成、在、麻、...、etc}  
   >val_500: {熊、湖、战、...、etc}  
 
