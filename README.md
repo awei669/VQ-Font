@@ -119,7 +119,7 @@ Modify the configuration in the file ```./cfgs/custom.yaml```
 
 
 ## Citation
-Welcome to cite our paper if you find it can help you.
+If you find the code or paper helpful, please consider citing our paper.
 ```
 @InProceedings{Pan_2023_ICCV,
     author    = {Pan, Wei and Zhu, Anna and Zhou, Xinyu and Iwana, Brian Kenji and Li, Shilin},
