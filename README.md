@@ -39,7 +39,7 @@ The model receives several style reference characters (from the target style) an
   > train_unis: ["4E00", "4E01", ...]  
   > val_unis: ["9576", "501F", ...]  
 
-3)  After that, draw all font images via ```./datasets/font2image.py```. All images are named by ```'characters + .png'```, such as ```‘阿.png’```.
+4)  After that, draw all font images via ```./datasets/font2image.py```. All images are named by ```'characters + .png'```, such as ```‘阿.png’```.
  Organize directories structure as below, and ```train_3000.png``` means draw the image from train_unis: ["4E00", "4E01", ...]. 
   > Font Directory  
   > |--| content_font  
