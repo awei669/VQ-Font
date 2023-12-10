@@ -137,7 +137,7 @@ Our code is modified based on the [LF-Font](https://github.com/clovaai/lffont) a
 
 
 ## Contact
-If you have any question, please open an issue or contact with ```annazhu@whut.edu.cn```.
+If you have any question, please open an issue or contact with ```annazhu@whut.edu.cn```&```aaawei@whut.edu.cn```.
 
 
 
