@@ -136,9 +136,6 @@ Our approach is inspired by [FS-Font](https://github.com/tlc121/FsFont), code is
 
 
 
-## Contact
-If you have any question, please open an issue or contact with ```annazhu@whut.edu.cn```&```aaawei@whut.edu.cn```.
-
 
 
 
