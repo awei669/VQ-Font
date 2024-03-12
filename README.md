@@ -26,7 +26,7 @@ The model receives several style reference characters (from the target style) an
 
 ## Data Preparation
 ### Images and Characters
-1)  Collect a series of '.ttf'(TrueType) or '.otf'(OpenType) files to generate images for training models. and divide them into source font and training set and test set. In order to better learn different styles, there should be differences and diversity in font styles in the training set. The fonts we used in our paper can be found in [here](https://www.foundertype.com/index.php/FindFont/index).  
+1)  Collect a series of '.ttf'(TrueType) or '.otf'(OpenType) files to generate images for training models. and divide them into source content font and training set and test set. In order to better learn different styles, there should be differences and diversity in font styles in the training set. The fonts we used in our paper can be found in [here](https://www.foundertype.com/index.php/FindFont/index).  
 
 2)  Secondly, specify the characters to be generated (including training characters and test characters), eg the first-level Chinese character table contains 3500 Chinese characters. 
 
@@ -42,14 +42,14 @@ The model receives several style reference characters (from the target style) an
 4)  After that, draw all font images via ```./datasets/font2image.py```. All images are named by ```'characters + .png'```, such as ```‘阿.png’```.
  Organize directories structure as below, and ```train_3000.png``` means draw the image from train_unis: ["4E00", "4E01", ...]. 
   > Font Directory  
-  > |--| content_font  
-  > |&#8195; --| train  
+  > |--| content  
+  > |&#8195; --| kaiti4train_VAE  
   > |&#8195; &#8195; --| train_3000.png  
   > |&#8195; &#8195; --| ...  
-  > |&#8195; --| val  
+  > |&#8195; --| kaiti4val_VAE  
   > |&#8195; &#8195; --| val_500.png  
   > |&#8195; &#8195; --| ...  
-  > |&#8195; --| train_val  
+  > |&#8195; --| kaiti4train_FFG  
   > |&#8195; &#8195; --| trian_val_3500.png  
   > |&#8195; &#8195; --| ...  
   > |--| train  
@@ -80,7 +80,7 @@ Run script ```./build_trainset.sh```
 ## Training
 The training process is divided into two stages: 1）Pre-training the content encoder and codebook via [VQ-VAE](https://arxiv.org/abs/1711.00937), 2）Training the few shot font generation model via [GAN](https://dl.acm.org/doi/abs/10.1145/3422622). 
 ### Pre-train VQ-VAE
-When pre-training VQ-VAE, the reconstructed character object comes from train_unis in the content font. The training process can be found at ```./model/VQ-VAE.ipynb```. 
+When pre-training VQ-VAE, the reconstructed character object comes from train_unis in the content font, The training process can be found at ```./model/VQ-VAE.ipynb```. 
 
 Then use the pre-trained content encoder to calculate a similarity between all training and test characters and store it as a dictionary.
 > {'4E07': {'4E01': 0.2143, '4E03': 0.2374, ...}, '4E08': {'4E01': 0.1137, '4E03': 0.1020, ...}, ...}
